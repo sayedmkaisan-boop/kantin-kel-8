@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Transaksi</title>
+</head>
+<body>
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="transaksi.html">Transaksi</a>
+</div>
+<div class="container">
+<h2>Buat Transaksi</h2>
+<select id="menuSelect">
+    <option value="10000">Nasi Goreng - 10000</option>
+    <option value="10000">Indomie - 10000</option>
+    <option value="5000">Teh Dingin - 5000</option>
+    <option value="10000">Bubur Ayam - 10000</option>
+    <option value="11000">Sate - 11000</option>
+</select>
+<button onclick="addItem()">Tambah</button>
+<p>Total: Rp <span id="total">0</span></p>
+</div>
+<script>
+let total = 0;
+function addItem(){
+    let harga = parseInt(document.getElementById('menuSelect').value);
+    total += harga;
+    document.getElementById('total').innerText = total;
+}
+</script>
+</body>
+</html>
