@@ -1,23 +1,68 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-<link rel="stylesheet" href="style.css">
-<title>Menu</title>
+<meta charset="UTF-8">
+<title>Daftar Menu</title>
+<link rel="stylesheet" href="style[1].css">
+<style>
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.menu-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+</style>
 </head>
 <body>
-<div class="nav">
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="transaksi.html">Transaksi</a>
+
+<h2 style="text-align:center; color:white;">🍽 Daftar Menu</h2>
+
+<div class="menu-container">
+
+  <div class="menu-item">
+    <img src="nasigoreng.jpg" alt="Nasi Goreng">
+    <h3>Nasi Goreng</h3>
+    <p>Rp 10.000</p>
+  </div>
+
+  <div class="menu-item">
+    <img src="indomie.jpg" alt="Indomie">
+    <h3>Indomie</h3>
+    <p>Rp 10.000</p>
+  </div>
+
+  <div class="menu-item">
+    <img src="teh.jpg" alt="Teh Dingin">
+    <h3>Teh Dingin</h3>
+    <p>Rp 5.000</p>
+  </div>
+
+  <div class="menu-item">
+    <img src="bubur.jpg" alt="Bubur Ayam">
+    <h3>Bubur Ayam</h3>
+    <p>Rp 10.000</p>
+  </div>
+
+  <div class="menu-item">
+    <img src="sate.jpg" alt="Sate">
+    <h3>Sate</h3>
+    <p>Rp 11.000</p>
+  </div>
+
 </div>
-<div class="container">
-<h2>Daftar Menu</h2>
-<div class="menu-card">Nasi Goreng - Rp 10000</div>
-<div class="menu-card">Indomie - Rp 10000</div>
-<div class="menu-card">Teh Dingin - Rp 5000</div>
-<div class="menu-card">Bubur Ayam - Rp 10000</div>
-<div class="menu-card">Sate - Rp 11000</div>
-</div>
+
 </body>
 </html>
